@@ -77,20 +77,5 @@ DANGR-DomainBed/
 - [Usage Guide](docs/usage.md)
 - [API Reference](docs/api.md)
 
-## 🤝 Contributing
 
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- This work builds upon [DomainBed](https://github.com/facebookresearch/DomainBed)
-- Thanks to the authors of the original DomainBed paper
-
-## 📧 Contact
-
-- Your Name - your.email@example.com
-- Project Link: https://github.com/YOUR_USERNAME/DANGR-DomainBed
