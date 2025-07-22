@@ -20,8 +20,8 @@ DANGR is a novel approach for domain generalization that uses adversarial noise 
 
 ```bash
 # Clone repository with submodules
-git clone --recursive https://github.com/YOUR_USERNAME/DANGR-DomainBed.git
-cd DANGR-DomainBed
+git clone --recursive https://github.com/HappyPotatohappy/DANGR2.git
+cd DANGR2
 
 # Create virtual environment
 python -m venv venv
