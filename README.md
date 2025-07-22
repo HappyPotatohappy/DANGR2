@@ -43,6 +43,7 @@ python scripts/train_standalone.py \
     --dataset PACS \
     --test_env 0 \
     --epochs 100
+```
 ## DomainBed Integration
 python -m domainbed.scripts.train \
     --data_dir ./data \
