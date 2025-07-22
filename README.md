@@ -45,6 +45,7 @@ python scripts/train_standalone.py \
     --epochs 100
 ```
 ## DomainBed Integration
+```bash
 python -m domainbed.scripts.train \
     --data_dir ./data \
     --algorithm DANGR \
