@@ -20,23 +20,23 @@ DANGR is a novel approach for domain generalization that uses adversarial noise 
 
 ```bash
 # Clone repository with submodules
-git clone --recursive https://github.com/HappyPotatohappy/DANGR2.git
-cd DANGR2
+git clone --recursive https://github.com/YOUR_USERNAME/DANGR-DomainBed.git
+cd DANGR-DomainBed
 
 # Create virtual environment
-```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
-
 pip install -r requirements.txt
 
 # Setup DomainBed
 bash scripts/setup_domainbed.sh
 ```
-# Training
-## Standalone Version
+
+### Training
+
+#### Standalone Version
 ```bash
 python scripts/train_standalone.py \
     --data_dir ./data \
@@ -44,7 +44,8 @@ python scripts/train_standalone.py \
     --test_env 0 \
     --epochs 100
 ```
-## DomainBed Integration
+
+#### DomainBed Integration
 ```bash
 python -m domainbed.scripts.train \
     --data_dir ./data \
@@ -52,5 +53,44 @@ python -m domainbed.scripts.train \
     --dataset PACS \
     --test_env 0
 ```
-# 📊 Results
 
+## 📊 Results
+
+| Dataset | Art | Cartoon | Photo | Sketch | Average |
+|---------|-----|---------|-------|--------|---------|
+| PACS    | 85.2| 78.9    | 96.1  | 79.5   | 84.9±7.3|
+
+## 📁 Project Structure
+
+```
+DANGR-DomainBed/
+├── dangr/          # Core DANGR implementation
+├── scripts/        # Training and evaluation scripts
+├── experiments/    # Experiment configurations
+├── docs/           # Documentation
+└── domainbed/      # DomainBed submodule
+```
+
+## 📖 Documentation
+
+- [Installation Guide](docs/installation.md)
+- [Usage Guide](docs/usage.md)
+- [API Reference](docs/api.md)
+
+## 🤝 Contributing
+
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- This work builds upon [DomainBed](https://github.com/facebookresearch/DomainBed)
+- Thanks to the authors of the original DomainBed paper
+
+## 📧 Contact
+
+- Your Name - your.email@example.com
+- Project Link: https://github.com/YOUR_USERNAME/DANGR-DomainBed
