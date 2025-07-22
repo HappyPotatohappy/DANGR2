@@ -24,11 +24,31 @@ git clone --recursive https://github.com/HappyPotatohappy/DANGR2.git
 cd DANGR2
 
 # Create virtual environment
+```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
+
 pip install -r requirements.txt
 
 # Setup DomainBed
 bash scripts/setup_domainbed.sh
+```
+# Training
+## Standalone Version
+```bash
+python scripts/train_standalone.py \
+    --data_dir ./data \
+    --dataset PACS \
+    --test_env 0 \
+    --epochs 100
+## DomainBed Integration
+python -m domainbed.scripts.train \
+    --data_dir ./data \
+    --algorithm DANGR \
+    --dataset PACS \
+    --test_env 0
+```
+# 📊 Results
+
