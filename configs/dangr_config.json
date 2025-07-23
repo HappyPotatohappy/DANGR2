@@ -1,0 +1,24 @@
+{
+    "algorithm": "DANGR",
+    "dataset": "PACS",
+    "data_dir": "./DomainBed/data",
+    "hparams": {
+        "batch_size": 32,
+        "lr": 1e-4,
+        "lr_g": 1e-4,
+        "weight_decay": 1e-5,
+        "lambda_domain": 0.5,
+        "lambda_class": 1.0,
+        "lambda_noise": 0.1,
+        "n_steps": 5000,
+        "checkpoint_freq": 100,
+        "data_augmentation": true,
+        "resnet_dropout": 0.0
+    },
+    "test_envs": [0],
+    "output_dir": "./experiments/DANGR_PACS",
+    "seed": 42,
+    "trial_seed": 0,
+    "skip_model_save": false,
+    "save_model_every_checkpoint": false
+}
